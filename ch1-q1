@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main()
+{
+    printf("First Line : Kriti Nishant.\nSecond Line : Flat No. 104, L.C Road.\nThird Line : Dhanbad, PIN-826001");
+    return(0);
+}
