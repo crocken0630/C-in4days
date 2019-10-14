@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main(void)
+{
+    //float j,k;
+    double cel,fer,result;
+    char x;
+    printf("Temperature Converter.\n\n");
+    printf("Select the choice of Temperature you want to convert.\nC or c for celcius to fahrenheit And F or f for farenheit to celcius\n");
+    one:
+    scanf("%c",&x);
+
+    if (x=='C' || x=='c')
+    {
+        printf("Enter the value of Celsius:");
+        scanf("%lf",&cel);
+        result=(cel*9/5)+32;
+        printf("%lf celsius int fahrenheit = %lf",cel,result);
+    }
+    else if(x=='F' || x=='f')
+    {
+        printf("Enter the value of Fahrenheit:");
+        scanf("%lf",&fer);
+        result=(fer-32)*5/9;
+        printf("%lf Fahrenheit int Celsius = %lf",fer,result);
+    }
+    else
+    {
+        printf("wrong input . Try again!");
+        goto one;
+    }
+    return(0);
+}
