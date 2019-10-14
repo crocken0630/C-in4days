@@ -1,0 +1,25 @@
+#include <stdio.h>
+//additin fuction declaration
+int add(int a, int b){
+    int c=a+b;
+    return(c);
+    }
+//***************************
+
+// substraction function declaration.
+int minus(int a, int b){
+    int k = a-b;
+    return(k);
+    }
+//************************************
+int main(void)
+{
+    int x,y,sum,sub;
+    printf("Use of functions to add and substract two numbers.\n\n");
+    printf("Enter any two integer of your type:\n");
+    scanf("%d %d",&x,&y);
+    sum=add(x,y);
+    sub=minus(x,y);
+    printf("The sum of %d + %d = %d \nThe substraction of %d - %d = %d\n",x,y,sum,x,y,sub);
+    return(0);
+}
