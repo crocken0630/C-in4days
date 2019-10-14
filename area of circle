@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(void)
+{
+    float r,pie=22/7,area;
+    printf("Enter the Radius of the circle in real form:");
+    scanf("%f",&r);
+    area=pie*(r*r);
+    printf("Area=%f",area);
+    return(0);
+}
